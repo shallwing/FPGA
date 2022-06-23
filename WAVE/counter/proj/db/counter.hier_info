@@ -1,0 +1,18 @@
+|counter
+sys_clk => out~reg0.CLK
+sys_clk => cnt[0]~reg0.CLK
+sys_clk => cnt[1]~reg0.CLK
+sys_clk => cnt[2]~reg0.CLK
+sys_clk => cnt[3]~reg0.CLK
+sys_rst_n => cnt.OUTPUTSELECT
+sys_rst_n => cnt.OUTPUTSELECT
+sys_rst_n => cnt.OUTPUTSELECT
+sys_rst_n => cnt.OUTPUTSELECT
+sys_rst_n => out~reg0.ACLR
+cnt[0] <= cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] <= cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

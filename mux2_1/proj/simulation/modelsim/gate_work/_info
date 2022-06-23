@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\mux2_1\proj\simulation\modelsim
+vmux2_1
+IdhQKOXdd5kOCl<[T?jANa1
+VPJ5g`iB5gXSi=g42ljVc;0
+Z1 dF:\FPGA_PROJECT\mux2_1\proj\simulation\modelsim
+w1629685548
+8mux2_1_8_1200mv_85c_slow.vo
+Fmux2_1_8_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 mRgRGoHn>45nmn]nIWlO>2
+!s85 0
+!s108 1629689110.683000
+!s107 mux2_1_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux2_1_8_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtb_mux2_1
+!i10b 1
+!s100 mSA;d5@`1MM<Z?OMC;@7n0
+IlEzYS90lfAm_i9zc@hX9H0
+V>2WA8@]fEPVZDIDT[bYk51
+R1
+w1629688903
+8F:/FPGA_PROJECT/mux2_1/sim/tb_mux2_1.v
+FF:/FPGA_PROJECT/mux2_1/sim/tb_mux2_1.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1629689185.275000
+!s107 F:/FPGA_PROJECT/mux2_1/sim/tb_mux2_1.v|
+!s90 -reportprogress|300|-work|work|F:/FPGA_PROJECT/mux2_1/sim/tb_mux2_1.v|
+!s101 -O0
+o-work work -O0

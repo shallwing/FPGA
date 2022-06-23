@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\mux2_1\proj\simulation\qsim
+vmux2_1
+Z1 !s100 IXA[4mIXWFnjX]0naecPm3
+Z2 IBl=0zF<S<lIGJ[o3cEaL=0
+Z3 VPJ5g`iB5gXSi=g42ljVc;0
+Z4 dF:\FPGA_PROJECT\mux2_1\proj\simulation\qsim
+Z5 w1629692628
+Z6 8mux2_1.vo
+Z7 Fmux2_1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mux2_1.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1629692628.895000
+Z12 !s107 mux2_1.vo|
+!s101 -O0
+vmux2_1_vlg_check_tst
+!i10b 1
+Z13 !s100 mgJ=JciciLi2mD^TU>?7P1
+Z14 ICOJDTRiJ<S[=UEhkfmT@I3
+Z15 V`eRelL7S3jfZ;l1U;Z7b=0
+R4
+Z16 w1629692626
+Z17 8mux2_1.vwf.vt
+Z18 Fmux2_1.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1629692628.953000
+Z20 !s107 mux2_1.vwf.vt|
+Z21 !s90 -work|work|mux2_1.vwf.vt|
+!s101 -O0
+R10
+vmux2_1_vlg_sample_tst
+!i10b 1
+Z22 !s100 kLoZ9O[^YJBiVY@B<d4<20
+Z23 In7=X[Jz60U9=<T>;joXnM2
+Z24 VB4d?BA;O21mmlUE]1Re2o2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmux2_1_vlg_vec_tst
+!i10b 1
+Z25 !s100 EhhJ<W[2K9f1_JgHVZ9[i1
+Z26 IMd7ONcBe1@R3VN^MDi<>T2
+Z27 VbKEV1DeF6]8NF76kN^^O73
+R4
+R16
+R17
+R18
+Z28 L0 156
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

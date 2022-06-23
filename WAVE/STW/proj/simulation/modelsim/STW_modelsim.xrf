@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, F:/FPGA_PROJECT/WAVE/STW/rtl/STW.v
+source_file = 1, F:/FPGA_PROJECT/WAVE/STW/proj/db/STW.cbx.xml
+design_name = STW
+instance = comp, \cnt[0]~output , cnt[0]~output, STW, 1
+instance = comp, \cnt[1]~output , cnt[1]~output, STW, 1
+instance = comp, \cnt[2]~output , cnt[2]~output, STW, 1
+instance = comp, \cnt[3]~output , cnt[3]~output, STW, 1
+instance = comp, \out~output , out~output, STW, 1
+instance = comp, \clk~input , clk~input, STW, 1
+instance = comp, \rst~input , rst~input, STW, 1

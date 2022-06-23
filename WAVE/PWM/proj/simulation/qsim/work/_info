@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\PWM\proj\simulation\qsim
+vPWM
+Z1 !s100 MGCj<UbYMmUi`g<_Yk00Q1
+Z2 IEeFYg0:TVfbHNjW595:@d1
+Z3 Vo@GemI`G_15]bOhVXX<oA2
+Z4 dF:\FPGA_PROJECT\PWM\proj\simulation\qsim
+Z5 w1629963480
+Z6 8PWM.vo
+Z7 FPWM.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|PWM.vo|
+Z10 o-work work -O0
+Z11 n@p@w@m
+!i10b 1
+!s85 0
+Z12 !s108 1629963481.785000
+Z13 !s107 PWM.vo|
+!s101 -O0
+vPWM_vlg_check_tst
+!i10b 1
+Z14 !s100 4;mSA7kFe`Ok807PGaH@W1
+Z15 IldzOCbXSD2K4>KblJW2`D3
+Z16 VAeE<=LoHad0=J96=_liT?2
+R4
+Z17 w1629963478
+Z18 8PWM.vwf.vt
+Z19 FPWM.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1629963481.848000
+Z21 !s107 PWM.vwf.vt|
+Z22 !s90 -work|work|PWM.vwf.vt|
+!s101 -O0
+R10
+Z23 n@p@w@m_vlg_check_tst
+vPWM_vlg_sample_tst
+!i10b 1
+Z24 !s100 ?W39TJO6Rk`bbez1X2[3c0
+Z25 IbVBDU1e7>E;Ke?oJL<bz41
+Z26 V^gTE^XlcZ:ZLV?mIETT>B1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@p@w@m_vlg_sample_tst
+vPWM_vlg_vec_tst
+!i10b 1
+!s100 H`]ZE>MLP_M>nFR:jKjB81
+Il8Vz^CRnlMACNP;hThX@92
+Z28 VnzHc@3k>@999@Lge`;EIN3
+R4
+R17
+R18
+R19
+Z29 L0 234
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@p@w@m_vlg_vec_tst

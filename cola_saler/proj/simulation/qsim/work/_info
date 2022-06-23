@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\cola_saler\proj\simulation\qsim
+vsaler
+Z1 !s100 [RbB7^ONVWX8o>oU0Yj]71
+Z2 IEE6Vf8[K_0CIK9G8`CF[?2
+Z3 VMc]iI41Ij147dGTH7BKG^0
+Z4 dF:\FPGA_PROJECT\cola_saler\proj\simulation\qsim
+Z5 w1630473800
+Z6 8saler.vo
+Z7 Fsaler.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|saler.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1630473802.555000
+Z12 !s107 saler.vo|
+!s101 -O0
+vsaler_vlg_check_tst
+!i10b 1
+Z13 !s100 4=cITKC]RVB<:[dKWg54R3
+Z14 IcoH4aaGh3zg>ZNMgF@kSm3
+Z15 VRg<m?:d:>G_mGoA63>8Je3
+R4
+Z16 w1630473798
+Z17 8complex_saler.vwf.vt
+Z18 Fcomplex_saler.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1630473802.623000
+Z20 !s107 complex_saler.vwf.vt|
+Z21 !s90 -work|work|complex_saler.vwf.vt|
+!s101 -O0
+R10
+vsaler_vlg_sample_tst
+!i10b 1
+Z22 !s100 Q7KJna@@2ggPVi34S<:zS0
+Z23 IUnB?Zgee0=8WZ_l^jP3N_0
+Z24 Vh2d5X8_Kh3UjiWMSgEd`:0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vsaler_vlg_vec_tst
+!i10b 1
+Z25 !s100 8iZlgljXO0gEn[P5:GhzV2
+Z26 IKX:]7m7ofmS;22jY>d2`T3
+Z27 VmAiKKo=PiA:Yl^l28@2Q<3
+R4
+R16
+R17
+R18
+Z28 L0 247
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

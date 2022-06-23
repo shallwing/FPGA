@@ -1,0 +1,28 @@
+|saler
+clk => out_coin~reg0.CLK
+clk => out_cola~reg0.CLK
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+clk => state[2]~reg0.CLK
+rst => state[0]~reg0.ACLR
+rst => state[1]~reg0.ACLR
+rst => state[2]~reg0.ACLR
+rst => out_cola~reg0.ACLR
+rst => out_coin~reg0.ACLR
+in_yuan => Equal0.IN2
+in_yuan => Equal1.IN2
+in_yuan => Equal2.IN2
+in_yuan => Equal3.IN2
+in_yuan => always1.IN1
+in_yuan => always2.IN1
+in_jiao => Equal0.IN3
+in_jiao => Equal1.IN3
+in_jiao => Equal2.IN3
+in_jiao => Equal3.IN3
+state[0] << state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] << state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] << state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_cola << out_cola~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_coin << out_coin~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

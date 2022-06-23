@@ -1,0 +1,31 @@
+module complex_saler
+(
+	input wire clk,
+	input wire rst,
+	input wire in_yuan,
+	input wire in_jiao,
+	
+	output reg out_cola,
+	output reg out_coin,
+	output reg [3:0] state
+);
+
+reg [3:0] _00 = 3'b000;
+reg [3:0] _05 = 3'b001;
+reg [3:0] _10 = 3'b010;
+reg [3:0] _15 = 3'b011;
+reg [3:0] _20 = 3'b100;
+reg [3:0] _25 = 3'b101;
+reg [3:0] _30 = 3'b110;
+
+always@(posedge clk or negedge rst)
+begin 
+	
+	
+	
+end
+
+
+
+endmodule
+

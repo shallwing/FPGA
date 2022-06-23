@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\full_adder\proj\simulation\qsim
+vfull_adder
+Z1 !s100 Q_NE>Mdgm37=Tb6goz8l71
+Z2 IdWHfZhcIi^@1zGWhS8nMS2
+Z3 V82G`Lc3G1e2C@EBVDSZf13
+Z4 dF:\FPGA_PROJECT\full_adder\proj\simulation\qsim
+Z5 w1629712346
+Z6 8full_adder.vo
+Z7 Ffull_adder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|full_adder.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1629712347.116000
+Z12 !s107 full_adder.vo|
+!s101 -O0
+vfull_adder_vlg_check_tst
+!i10b 1
+Z13 !s100 2]Lc6N3R_P=U;d:TUG28>0
+Z14 IJHmBBF`3kf5=O;lLIMlaI1
+Z15 VOP<a6LiJEdC>]G>@[l]:`3
+R4
+Z16 w1629712344
+Z17 8full_adder.vwf.vt
+Z18 Ffull_adder.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1629712347.175000
+Z20 !s107 full_adder.vwf.vt|
+Z21 !s90 -work|work|full_adder.vwf.vt|
+!s101 -O0
+R10
+vfull_adder_vlg_sample_tst
+!i10b 1
+Z22 !s100 @XVX2n>O:N=2;@>0Ej^i93
+Z23 IXgEY5RSNX`aAk<9ik7MB82
+Z24 VH@BD@:_c04711;LM6]WH_1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vfull_adder_vlg_vec_tst
+!i10b 1
+Z25 !s100 aNnE6_3ZcdNG4QLQ@A^Vf2
+Z26 IUn;JNhNOUMni9j8TEj`^13
+Z27 VYcA9o=ef0RHic;;ZJODc61
+R4
+R16
+R17
+R18
+Z28 L0 183
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

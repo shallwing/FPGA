@@ -1,0 +1,7 @@
+|flip_flop
+in => out~reg0.DATAIN
+sys_clk => out~reg0.CLK
+sys_rst_n => out~reg0.ACLR
+out << out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

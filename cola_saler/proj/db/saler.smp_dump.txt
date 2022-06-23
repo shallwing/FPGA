@@ -1,0 +1,8 @@
+
+State Machine - |saler|state
+Name state.ONE_HALF state.ONE state.HALF state.IDLE state.TWO 
+state.IDLE 0 0 0 0 0 
+state.HALF 0 0 1 1 0 
+state.ONE 0 1 0 1 0 
+state.ONE_HALF 1 0 0 1 0 
+state.TWO 0 0 0 1 1 

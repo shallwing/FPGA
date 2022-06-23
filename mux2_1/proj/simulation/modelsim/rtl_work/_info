@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\mux2_1\proj\simulation\modelsim
+vmux2_1
+!i10b 1
+!s100 EOl78dO3I2ROV1@aITih]3
+IVG^fih4O>`T:ng5HZoMI:3
+VPJ5g`iB5gXSi=g42ljVc;0
+Z1 dF:\FPGA_PROJECT\mux2_1\proj\simulation\modelsim
+w1629685525
+8F:/FPGA_PROJECT/mux2_1/rtl/mux2_1.v
+FF:/FPGA_PROJECT/mux2_1/rtl/mux2_1.v
+L0 3
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1629689074.249000
+!s107 F:/FPGA_PROJECT/mux2_1/rtl/mux2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA_PROJECT/mux2_1/rtl|F:/FPGA_PROJECT/mux2_1/rtl/mux2_1.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+F:/FPGA_PROJECT/mux2_1/rtl -O0

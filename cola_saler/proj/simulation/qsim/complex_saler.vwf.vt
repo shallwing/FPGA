@@ -1,0 +1,419 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/01/2021 13:23:18"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    saler
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module saler_vlg_sample_tst(
+	clk,
+	in_jiao,
+	in_yuan,
+	rst,
+	sampler_tx
+);
+input  clk;
+input  in_jiao;
+input  in_yuan;
+input  rst;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or in_jiao or in_yuan or rst)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module saler_vlg_check_tst (
+	out_coin,
+	out_cola,
+	state,
+	sampler_rx
+);
+input  out_coin;
+input  out_cola;
+input [2:0] state;
+input sampler_rx;
+
+reg  out_coin_expected;
+reg  out_cola_expected;
+reg [2:0] state_expected;
+
+reg  out_coin_prev;
+reg  out_cola_prev;
+reg [2:0] state_prev;
+
+reg  out_coin_expected_prev;
+reg  out_cola_expected_prev;
+reg [2:0] state_expected_prev;
+
+reg  last_out_coin_exp;
+reg  last_out_cola_exp;
+reg [2:0] last_state_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	out_coin_prev = out_coin;
+	out_cola_prev = out_cola;
+	state_prev = state;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	out_coin_expected_prev = out_coin_expected;
+	out_cola_expected_prev = out_cola_expected;
+	state_expected_prev = state_expected;
+end
+
+
+// expected state[ 2 ]
+initial
+begin
+	state_expected[2] = 1'bX;
+end 
+// expected state[ 1 ]
+initial
+begin
+	state_expected[1] = 1'bX;
+end 
+// expected state[ 0 ]
+initial
+begin
+	state_expected[0] = 1'bX;
+end 
+
+// expected out_coin
+initial
+begin
+	out_coin_expected = 1'bX;
+end 
+
+// expected out_cola
+initial
+begin
+	out_cola_expected = 1'bX;
+end 
+// generate trigger
+always @(out_coin_expected or out_coin or out_cola_expected or out_cola or state_expected or state)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected out_coin = %b | expected out_cola = %b | expected state = %b | ",out_coin_expected_prev,out_cola_expected_prev,state_expected_prev);
+	$display("| real out_coin = %b | real out_cola = %b | real state = %b | ",out_coin_prev,out_cola_prev,state_prev);
+`endif
+	if (
+		( out_coin_expected_prev !== 1'bx ) && ( out_coin_prev !== out_coin_expected_prev )
+		&& ((out_coin_expected_prev !== last_out_coin_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out_coin :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_coin_expected_prev);
+		$display ("     Real value = %b", out_coin_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_out_coin_exp = out_coin_expected_prev;
+	end
+	if (
+		( out_cola_expected_prev !== 1'bx ) && ( out_cola_prev !== out_cola_expected_prev )
+		&& ((out_cola_expected_prev !== last_out_cola_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port out_cola :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", out_cola_expected_prev);
+		$display ("     Real value = %b", out_cola_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_out_cola_exp = out_cola_expected_prev;
+	end
+	if (
+		( state_expected_prev[0] !== 1'bx ) && ( state_prev[0] !== state_expected_prev[0] )
+		&& ((state_expected_prev[0] !== last_state_exp[0]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_state_exp[0] = state_expected_prev[0];
+	end
+	if (
+		( state_expected_prev[1] !== 1'bx ) && ( state_prev[1] !== state_expected_prev[1] )
+		&& ((state_expected_prev[1] !== last_state_exp[1]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_state_exp[1] = state_expected_prev[1];
+	end
+	if (
+		( state_expected_prev[2] !== 1'bx ) && ( state_prev[2] !== state_expected_prev[2] )
+		&& ((state_expected_prev[2] !== last_state_exp[2]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_state_exp[2] = state_expected_prev[2];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module saler_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg in_jiao;
+reg in_yuan;
+reg rst;
+// wires                                               
+wire out_coin;
+wire out_cola;
+wire [2:0] state;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+saler i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.in_jiao(in_jiao),
+	.in_yuan(in_yuan),
+	.out_coin(out_coin),
+	.out_cola(out_cola),
+	.rst(rst),
+	.state(state)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b1;
+end 
+
+// in_jiao
+initial
+begin
+	in_jiao = 1'b0;
+	in_jiao = #20000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #50000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #30000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #30000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #60000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #40000 1'b0;
+	in_jiao = #20000 1'b1;
+	in_jiao = #30000 1'b0;
+	in_jiao = #30000 1'b1;
+	in_jiao = #10000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #10000 1'b0;
+	in_jiao = #20000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #40000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #30000 1'b1;
+	in_jiao = #10000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #30000 1'b0;
+	in_jiao = #20000 1'b1;
+	in_jiao = #40000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #40000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #10000 1'b0;
+	in_jiao = #10000 1'b1;
+	in_jiao = #50000 1'b0;
+	in_jiao = #20000 1'b1;
+	in_jiao = #20000 1'b0;
+	in_jiao = #10000 1'b1;
+end 
+
+// in_yuan
+initial
+begin
+	in_yuan = 1'b1;
+	in_yuan = #30000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #30000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #30000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #30000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #40000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #30000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #20000 1'b1;
+	in_yuan = #50000 1'b0;
+	in_yuan = #10000 1'b1;
+	in_yuan = #10000 1'b0;
+	in_yuan = #30000 1'b1;
+	in_yuan = #20000 1'b0;
+	in_yuan = #50000 1'b1;
+end 
+
+saler_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.in_jiao(in_jiao),
+	.in_yuan(in_yuan),
+	.rst(rst),
+	.sampler_tx(sampler)
+);
+
+saler_vlg_check_tst tb_out(
+	.out_coin(out_coin),
+	.out_cola(out_cola),
+	.state(state),
+	.sampler_rx(sampler)
+);
+endmodule
+

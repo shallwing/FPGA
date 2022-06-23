@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\FPGA_PROJECT\flip_flop\proj\simulation\qsim
+vflip_flop
+Z1 IB`<KlWF?giS`^1QfAlb6B3
+Z2 VAI=M1Z6l?A_VPbRFBKWF<0
+Z3 dF:\FPGA_PROJECT\flip_flop\proj\simulation\qsim
+Z4 w1629813463
+Z5 8flip_flop.vo
+Z6 Fflip_flop.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|flip_flop.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 WkV^8BU;;DMFkK`hDHJJY3
+!s85 0
+Z11 !s108 1629813464.440000
+Z12 !s107 flip_flop.vo|
+!s101 -O0
+vflip_flop_vlg_check_tst
+!i10b 1
+Z13 !s100 WaPlhz>Y@H1<z<iFe?RHz1
+Z14 ISjeJS1DzGoCR2M2HF7kW61
+Z15 V5?U1inj`iCMahDG@N69CT1
+R3
+Z16 w1629813460
+Z17 8flip_flop.vwf.vt
+Z18 Fflip_flop.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1629813464.502000
+Z20 !s107 flip_flop.vwf.vt|
+Z21 !s90 -work|work|flip_flop.vwf.vt|
+!s101 -O0
+R9
+vflip_flop_vlg_sample_tst
+!i10b 1
+Z22 !s100 k;M6A`k00nR`32cnZ4XMS3
+Z23 I_BYQXk2>MjSbjPUW97CDe1
+Z24 Vl2Smf2UF5P^PlHEDbRB>S2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vflip_flop_vlg_vec_tst
+!i10b 1
+Z25 !s100 X^XO0NlogRjfdWL2:GK`k2
+Z26 IHIDjT9BTFQY2Rl6F7MJ660
+Z27 Vn6nAJF1DnCc;M9Rin25=k1
+R3
+R16
+R17
+R18
+Z28 L0 156
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
